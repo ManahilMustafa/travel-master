@@ -14,20 +14,19 @@ const NewsletterSection = () => {
       <div className="relative bg-white w-full max-w-md p-10 shadow-lg">
         
         {/* Top Tagline */}
-        <p className="font-mono text-sm mb-6 uppercase tracking-wider text-gray-700">
-          [ Subscribe Now ]
-        </p>
+       <p className="font-mono text-sm mb-6 uppercase tracking-wider text-gray-700">
+  [ Join the Inner Circle ]
+</p>
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8 text-black">
-          BE FIRST TO DISCOVER <br /> NEW PERFORMANCES
-        </h2>
+{/* Heading */}
+<h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8 text-black">
+  BE FIRST TO KNOW WHEN NEW BUSES ARE LIVE
+</h2>
 
-        {/* Description */}
-        <p className="text-gray-600 mb-10 text-sm leading-relaxed">
-          Subscribe to receive exclusive updates on upcoming performances, events, and behind-the-scenes stories.
-        </p>
-
+{/* Description */}
+<p className="text-gray-600 mb-10 text-sm leading-relaxed">
+  Subscribe to get instant alerts on new routes, early-bird ticket releases, and travel updates for Ireland's biggest concerts and festivals.
+</p>
         {/* Form */}
         <form className="space-y-6">
           <div className="flex gap-4">
@@ -53,7 +52,7 @@ const NewsletterSection = () => {
             type="submit" 
             className="w-full bg-black text-white py-4 text-xs font-bold tracking-[0.2em] hover:bg-gray-800 transition-all uppercase"
           >
-            Step into the spotlight
+         Reserve My Seat
           </button>
         </form>
 

@@ -13,7 +13,6 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/studio', label: 'Studio' },
     { href: '/events', label: 'Best Events' },
     { href: '/news', label: 'News' },
     { href: '/pages', label: 'All Pages' },

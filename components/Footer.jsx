@@ -74,7 +74,7 @@ const StageoFooterSection = () => {
 
         <div className="relative z-10 px-6 md:px-20 py-20 flex flex-col md:flex-row justify-between items-center gap-10">
           <h3 className="text-4xl md:text-5xl font-bold max-w-2xl leading-tight uppercase">
-            Visit the future of theatre and experience bold live art!
+          Your front row experience starts the moment you step on board
           </h3>
           
           <div className="relative bg-white text-black px-16 py-6 flex items-center group cursor-pointer min-w-[300px]">
