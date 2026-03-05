@@ -3,10 +3,13 @@ import React from 'react';
 
 const NewsletterSection = () => {
   return (
-    <section 
-      className="relative h-screen w-full bg-cover bg-center flex justify-end items-center pr-8 md:pr-20"
-      style={{ backgroundImage: "url('/concert.jpg')" }}
-    >
+   <section
+  className="relative h-screen w-full bg-cover bg-center flex justify-end items-center pr-8 md:pr-20"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1920&auto=format&fit=crop')",
+  }}
+>
       {/* White Form Container */}
       <div className="relative bg-white w-full max-w-md p-10 shadow-lg">
         
