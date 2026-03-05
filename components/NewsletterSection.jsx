@@ -3,10 +3,18 @@ import React from 'react';
 
 const NewsletterSection = () => {
   return (
-    <section 
-      className="relative h-screen w-full bg-cover bg-center flex justify-end items-center pr-8 md:pr-20"
-      style={{ backgroundImage: "url('/path-to-your-bg-image.jpg')" }}
-    >
+    <section className="relative h-screen w-full flex justify-end items-center pr-8 md:pr-20 overflow-hidden">
+
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/form-video.mp4" type="video/mp4" />
+      </video>
       {/* White Form Container */}
       <div className="relative bg-white w-full max-w-md p-10 shadow-lg">
         
