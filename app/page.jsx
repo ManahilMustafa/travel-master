@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react'
 import FeaturedConcerts from '../components/FeaturedConcerts'
 import TabSection from '../components/TabSection'
 import NewsletterSection from '../components/NewsletterSection'
+import TravelMasterInfo from '../components/TravelMasterInfo'
 
 export default function Home() {
   // Is variable ko hum style prop mein use karenge
@@ -23,6 +24,7 @@ export default function Home() {
         <FeaturedConcerts />
         <TabSection />
         <NewsletterSection />
+        <TravelMasterInfo />
       </main>
 
       <Footer />
