@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* 1. Direct Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  /* Space Grotesk Variable */
+  --font-space: 'Space Grotesk', sans-serif;
+}
+
+/* 2. Sabse Zaroori: Tailwind ki default settings ko override karein */
+@theme inline {
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-mono: monospace;
+}
+
+/* 3. Global Force: Har element par font lagao */
+@layer base {
+  html, body, * {
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+}
+
+/* Agar koi specific class (Geist) abhi bhi aa rahi hai to usey yahan kill karein */
+.font-sans {
+  font-family: 'Space Grotesk', sans-serif !important;
+}

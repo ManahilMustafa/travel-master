@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --primary: 3 105 161;
+  --primary-foreground: 255 255 255;
+  --accent: 249 115 22;
+  --accent-foreground: 255 255 255;
+  --secondary: 14 165 233;
+  --secondary-foreground: 255 255 255;
+  --muted: 226 232 240;
+  --muted-foreground: 100 116 139;
+  --border: 226 232 240;
+  --input: 241 245 249;
+  --ring: 3 105 161;
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-poppins), 'Poppins', sans-serif;
+  --color-background: rgb(var(--background) / <alpha-value>);
+  --color-foreground: rgb(var(--foreground) / <alpha-value>);
+  --color-card: rgb(var(--card) / <alpha-value>);
+  --color-card-foreground: rgb(var(--card-foreground) / <alpha-value>);
+  --color-primary: rgb(var(--primary) / <alpha-value>);
+  --color-primary-foreground: rgb(var(--primary-foreground) / <alpha-value>);
+  --color-secondary: rgb(var(--secondary) / <alpha-value>);
+  --color-secondary-foreground: rgb(var(--secondary-foreground) / <alpha-value>);
+  --color-accent: rgb(var(--accent) / <alpha-value>);
+  --color-accent-foreground: rgb(var(--accent-foreground) / <alpha-value>);
+  --color-muted: rgb(var(--muted) / <alpha-value>);
+  --color-muted-foreground: rgb(var(--muted-foreground) / <alpha-value>);
+  --color-border: rgb(var(--border) / <alpha-value>);
+  --color-input: rgb(var(--input) / <alpha-value>);
+  --color-ring: rgb(var(--ring) / <alpha-value>);
+  --radius: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight;
+    font-family: var(--font-playfair);
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-bold text-balance leading-tight;
+    font-family: var(--font-playfair);
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold text-balance leading-snug;
+    font-family: var(--font-playfair);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold text-foreground bg-secondary hover:bg-secondary/90 rounded-lg transition-colors;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold text-primary border-2 border-primary hover:bg-primary/5 rounded-lg transition-colors;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
+  }
+}
