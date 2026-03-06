@@ -2,6 +2,7 @@ import { Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import GlobalGrid from '@/components/GlobalGrid'
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -17,11 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-black text-white relative">
-        {/* Ye hamesha piche rahega */}
+      <body className={`${spaceGrotesk.className} antialiased bg-black text-white relative`}>
         <GlobalGrid />
-        
-        {/* Content wrapper must be relative and have no background */}
+
         <div className="relative z-10 bg-transparent">
           {children}
         </div>
