@@ -4,7 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Check, X, ArrowRight, Minus, Plus, Calendar, MapPin, Clock, ChevronDown 
 } from 'lucide-react';
-
+import Navbar from '@/components/Navbar'; 
+import Footer from '@/components/Footer';
 const BookingPage = () => {
   const [selectedCounty, setSelectedCounty] = useState("");
   const [ticketQty, setTicketQty] = useState(1);
@@ -26,7 +27,8 @@ const BookingPage = () => {
 
   return (
     <div className="bg-black text-white min-h-screen font-sans selection:bg-blue-600 overflow-x-hidden">
-      
+      {/* --- Global Navbar --- */}
+      <Navbar />
       {/* --- HERO CONCERT BANNER --- */}
       <div className="relative h-[50vh] md:h-[60vh] w-full overflow-hidden ">
         <img 
@@ -237,9 +239,8 @@ const BookingPage = () => {
 
       </main>
 
-      <footer className="border-t border-zinc-800 py-12 text-center">
-        <p className="text-[9px] text-zinc-600 uppercase tracking-[0.5em] mb-2 px-4 italic">© 2026 Nationwide Events | Travel in Style</p>
-      </footer>
+   {/* --- Global Footer --- */}
+      <Footer />
     </div>
   );
 };
